@@ -28,3 +28,5 @@ module.exports = {
 ```
 
 (replace XXXXXXXXXXXX with your own values)
+
+# Remember to add your own Resources.csv file 
