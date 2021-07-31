@@ -1,5 +1,5 @@
 # Set Gender in Mixpanel
-Set gender based on first name in Mixpanel via /engage API from a csv file with nodejs. We are using nationalize API as well as genderize API to first look for nationality in name and then use that to call genderize to get the probability of gender. 
+Set gender based on first name in Mixpanel via /engage API from a csv file with nodejs. We are using [nationalize API](https://nationalize.io/) as well as [genderize API](https://genderize.io/) to first look for nationality in name and then use that to call genderize to get the probability of gender. 
 
 Note: won't work on special characters (ie. chinese characters).
 
