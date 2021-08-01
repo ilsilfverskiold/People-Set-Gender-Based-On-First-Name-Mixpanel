@@ -31,7 +31,7 @@ async function getNewData() {
 
 			// remove whitespace and additional characters from the values we need 
 			let distinct_id = array[i][0].slice(1,-1);
-			let first_name = encodeURIComponent(array[i][1].slice(1,-1).replace(/-/g, '').replace(/\s/g, ""));
+			let first_name = encodeURIComponent(array[i][1].slice(1,-1).replace(/\s/g, ""));
 			console.log(first_name);
 
 			// use values to await for returning values in findGender
