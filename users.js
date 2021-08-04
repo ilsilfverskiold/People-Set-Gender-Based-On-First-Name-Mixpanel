@@ -30,8 +30,8 @@ async function getNewData() {
 		if(!(array[i][1].includes("undefined"))) {
 
 			// remove whitespace and additional characters from the values we need 
-			let distinct_id = array[i][0].slice(1,-1);
-			let first_name = encodeURIComponent(array[i][1].slice(1,-1).replace(/\s/g, ""));
+			const distinct_id = array[i][0].slice(1,-1);
+			const first_name = encodeURIComponent(array[i][1].slice(1,-1).replace(/\s/g, ""));
 			console.log(first_name);
 
 			// use values to await for returning values in findGender
@@ -50,8 +50,8 @@ async function getNewData() {
 // get values and then push back the new array for the user 
 async function findGender(distinct_id, first_name) {
 	
-	let nationalitize = await nationality(first_name);
-	let gender = await genderizeIO(first_name, nationalitize);
+	const nationalitize = await nationality(first_name);
+	const gender = await genderizeIO(first_name, nationalitize);
 	
 	return [distinct_id,first_name,gender,nationalitize];
 }
