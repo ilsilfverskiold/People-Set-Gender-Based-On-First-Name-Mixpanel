@@ -14,7 +14,7 @@ Read about Mixpanel's /engage endpoint to set properties on user profiles [here]
 
 
 # First Steps
-- Export users with first_name added as a csv file. 
+- Export users with first_name added as a csv file (or export user data in other ways)
 - Get your keys and add them to the keys.js file
 - Get genderize api key as well (if you have an account and you're updating up more than 500 users). 
 # Keys
