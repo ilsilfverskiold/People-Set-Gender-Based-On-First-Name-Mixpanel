@@ -38,3 +38,9 @@ See package-lock.json file
 - Remember to add your Resource.csv file to read from
 - May need to tweak the functions in users.js if you already have nationality. The Nationalize API doesn't always seem to do the job. Do a sanity check with a few users before and look over if the gender set is really correct. I ended up removing it and instead using their geolocation to look up their country code via country-code-lookup.
 - Also, don't forget to import the gender probability number so you can filter out data that has a lower probability than .95
+
+# Automize it
+- Get data via their engage api (see example [here](https://github.com/ilsilfverskiold/getUsersMixpanelEU/blob/main/get.js))
+- Set up an always on container (I used Goorm IDE but it is a bit expensive, think 15€ monthly add on)
+- Set up a cron job
+
